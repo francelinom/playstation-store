@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card-pricing',
   templateUrl: './card-pricing.component.html',
-  styleUrls: ['./card-pricing.component.css']
+  styleUrls: ['./card-pricing.component.css'],
 })
 export class CardPricingComponent implements OnInit {
+  @Input() gameType: string = 'Digital PS4';
+  @Input() gamePrice: string = 'R$ 399,89';
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
